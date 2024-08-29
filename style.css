@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #080808;
+}
+
+.header-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgb(255, 255, 255);
+    border-bottom: 5px solid #444;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url("./img1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    position: relative;
+}
+
+.main-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.floating-image {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    z-index: 1;
+    bottom: -10rem;
+    left: 50%;
+    translate: -50%;
+    transition: transform ease-in-out 3s;
+}
+
+.floating-image:hover {
+  transform: rotate(360deg);
+}
+
+.description-section {
+    margin: 0 10rem;
+    margin-top: 15rem;
+    position: relative;
+    height: 25rem;
+    border-bottom: 2px solid #444;
+}
+
+.description-section p {
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.description-image {
+    position: absolute;
+    height: 5rem;
+    width: 30rem;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ingredients-section {
+    margin: 0 10rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 9rem;
+    position: relative;
+}
+
+.section-title {
+    background-color: #fee4c3;
+    border-radius: 80%;
+    padding: 0.5rem;
+    width: fit-content;
+    color: #333;
+    margin: 20px ;
+    text-align: left;
+}
+
+.ingredient-list {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.ingredient-item {
+    margin-left: 2rem;
+    color: #0b0b0b;
+    font-size: 1.5rem;
+}
+
+.ingredients-image {
+    position: absolute;
+    height: 5rem;
+    width: 30rem;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.directions-section {
+    margin: 0 10rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 9rem;
+    position: relative;
+}
+
+.direction-list {
+    list-style-type: decimal;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.direction-step {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 90%;
+    margin-left: 2rem;
+    padding: 0;
+    text-align: justify;
+    color: #000000;
+}
